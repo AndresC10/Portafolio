@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>Portafolio</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar grid--container">
+      <a class="navbar__logo" href="#"><i class='bx bxs-user-circle'></i> Andrés Clemente</a>
+
+      <div class="navbar__menu">
+        <a class="btn__close" href="#"><i class='bx bx-x navbar__icon'></i></a>
+
+        <ul class="navbar__list">
+          <li class="navbar__item"><a class="navbar__link" href="#home">Inicio</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#about">Acerca de Mí</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#portfolio">Portafolio</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+
+      <a class="btn__open" href="#"><i class='bx bx-menu navbar__icon'></i></a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="home">
+      <div class="home__container grid--container">
+        <div class="home__image">
+          <span></span>
+          <img src="assets/img/profile.png" alt="profile photo">
+        </div>
+
+        <div class="home__info">
+          <h1 class="home__title">👋🏻 Hola! soy Andrés <br> Clemente</h1>
+          <p class="home__description">
+            Soy desarrollador web, apasionado por la tecnología y la programación.
+          </p>
+        </div>
+
+        <ul class="home__social">
+          <li class="home__social-item"><a class="home__social-link" href="#"><i class='bx bxl-linkedin'></i></a></li>
+          <li class="home__social-item"><a class="home__social-link" href="#"><i class='bx bxl-instagram'></i></a></li>
+          <li class="home__social-item"><a class="home__social-link" href="#"><i class='bx bxl-facebook'></i></a></li>
+        </ul>
+
+
+        <div class="home__buttons">
+          <button class="btn btn--primary" type="button">Descarga CV</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section">
+      <h2 class="section__title">Acerca de Mí</h2>
+
+      <div class="about__container grid--container">
+        <p class="about__description">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet incidunt aut distinctio maxime recusandae.
+          Velit exercitationem ducimus cupiditate corrupti eveniet soluta accusamus quasi, suscipit, vitae optio,
+          officiis rerum cumque numquam.
+        </p>
+
+        <div class="about__skills grid--container">
+          <div class="about__cards">
+            <!--Card 1 -->
+            <div class="about__card">
+
+
+              <h3 class="about__card-title"><i class='bx bxl-html5'></i>HTML5</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <!--Card 2 -->
+            <div class="about__card">
+
+
+              <h3 class="about__card-title"><i class='bx bxl-css3'></i>CSS3</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <!--Card 3 -->
+            <div class="about__card">
+
+
+              <h3 class="about__card-title"><i class='bx bxl-javascript'></i>JavaScript</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+
+          <div class="about__tags">
+            <h3 class="about__tags-title">Habilidades</h3>
+            <div class="about__tags-container">
+              <span class="about__tag">Responsable</span>
+              <span class="about__tag">Trabajo en equipo</span>
+              <span class="about__tag">Creativo</span>
+              <span class="about__tag">Puntual</span>
+              <span class="about__tag">Proactivo</span>
+              <span class="about__tag">Autodidacta</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    &copy;2022 Portafolio
+  </footer>
+
+  <script>
+    const btnMenu = document.querySelector('.btn__open')
+    const btnClose = document.querySelector('.btn__close')
+    const Menu = document.querySelector('.navbar__menu')
+
+
+    btnMenu.onclick = function () {
+      Menu.classList.add('show--menu')
+    }
+
+    btnClose.onclick = function () {
+      Menu.classList.remove('show--menu')
+    }
+  </script>
+
+</body>
+
+</html>
