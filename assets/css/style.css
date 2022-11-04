@@ -98,7 +98,8 @@ img {
 .section__title {
   text-align: center;
   margin: var(--mr-3) 0;
-  color: #fff;
+  color: #34B0BE;
+  font-weight: var(--font-bold);
 }
 
 .grid--container {
@@ -291,6 +292,7 @@ img {
   border-radius: 5px;
   box-shadow: var(--box-shadow);
   color: #fff;
+  border-radius: 5%;
 }
 
 .about__card-title {
@@ -300,4 +302,11 @@ img {
   align-items: center;
   column-gap: 1rem;
   margin-bottom: 0px;
+}
+
+.contact__link {
+  display: flex;
+  align-items: center;
+  column-gap: 2px;
+  color: #34B0BE;
 }
