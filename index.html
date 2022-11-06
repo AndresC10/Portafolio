@@ -20,7 +20,7 @@
 <body>
   <header class="header">
     <nav class="navbar grid--container">
-      <a class="navbar__logo"><i class='bx bxs-user-circle'></i> Andrés Clemente</a>
+      <a class="navbar__logo" href="#"><i class='bx bxs-user-circle'></i> Andrés Clemente</a>
 
       <div class="navbar__menu">
         <a class="btn__close"><i class='bx bx-x navbar__icon'></i></a>
@@ -39,7 +39,7 @@
 
   <main>
 
-    <section class="home">
+    <section class="home" id="home">
       <div class="home__container grid--container">
         <div class="home__image">
           <span></span>
@@ -66,7 +66,7 @@
       </div>
     </section>
 
-    <section class="about section">
+    <section class="about section" id="about">
       <h2 class="section__title #about">Acerca de Mí</h2>
 
       <div class="about__container grid--container">
@@ -104,10 +104,11 @@
           <div class="about__tags">
             <h3 class="about__tags-title">Habilidades</h3>
             <div class="about__tags-container">
+              <span class="about__tag">Ingles Avanzado</span>
               <span class="about__tag">Responsable</span>
               <span class="about__tag">Trabajo en equipo</span>
               <span class="about__tag">Creativo</span>
-              <span class="about__tag">Puntual</span>
+              <span class="about__tag">Gran determinación</span>
               <span class="about__tag">Proactivo</span>
               <span class="about__tag">Autodidacta</span>
             </div>
@@ -116,15 +117,197 @@
       </div>
 
     </section>
-    <section class="contact section">
-      <h2 class="section__title" id="#contact">Contacto</h2>
-      <a class="contact__link" href="tel:+584147948277">Clickea aqui para llamarme!<img src="assets/img/phone.svg"
-          alt="phone photo"></a>
+
+    <section class="projects section">
+      <h2 class="section__title">Proyectos</h2>
+
+      <div class="projects__container grid--container">
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project1.jpg" alt="project 1">
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Proyecto 1</h3>
+              <p class="projects__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">VER DEMO</button>
+                <button class="btn projects__button" type="button">VER CÓDIGO</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project2.png" alt="project 1">
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Proyecto 2</h3>
+              <p class="projects__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">VER DEMO</button>
+                <button class="btn projects__button" type="button">VER CÓDIGO</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project3.jpg" alt="project 1">
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Proyecto 3</h3>
+              <p class="projects__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">VER DEMO</button>
+                <button class="btn projects__button" type="button">VER CÓDIGO</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project4.png" alt="project 1">
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Proyecto 4</h3>
+              <p class="projects__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">VER DEMO</button>
+                <button class="btn projects__button" type="button">VER CÓDIGO</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <section class="contact section">
+      <h2 class="section__title">Contacto</h2>
+
+      <div class="contact__container grid--container">
+        <div class="contact__info">
+          <h3 class="contact__info-title">Información de contacto</h3>
+          <p class="contact__info-description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+
+          <address class="contact__info-data">
+            <div class="contact__info-item">
+              <i class='bx bx-phone'></i>
+
+              <span class="contact__info-nomber">
+                +00 123 456 7890
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class='bx bxs-envelope'></i>
+
+              <span class="contact__info-mail">
+                <a href="mailto:test@correo.com">
+                  test@correo.com
+                </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class='bx bx-map'></i>
+
+              <span class="contact__info-map">
+                Caracas, Venezuela.
+              </span>
+            </div>
+          </address>
+        </div>
+
+        <h3 class="contact__form-title">Enviar mensaje</h3>
+        <div class="contact__form">
+
+          <form id="form" class="contact__form-container">
+
+            <div class="contact__form-group">
+              <label for="name" class="contact__form-label">Nombre</label>
+              <input type="text" id="name" class="contact__form-input">
+            </div>
+
+            <div class="contact__form-group">
+              <label for="email" class="contact__form-label">Correo</label>
+              <input type="email" id="email" class="contact__form-input">
+            </div>
+
+            <div class="contact__form-group">
+              <label for="message" class="contact__form-label">Mensaje</label>
+              <textarea id="message" cols="30" rows="10" class="contact__form-input"></textarea>
+            </div>
+
+            <div class="contact__form-button-container">
+              <button type="submit" class="btn contact__form-button">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer>
-    &copy;2022 Portafolio
+  <footer class="footer section">
+    <div class="footer__container grid--container">
+      <div class="footer__info">
+        <h3 class="footer__title">Andrés Clemente</h3>
+        <p class="footer__description">
+          Desarrollador web, apasionado por la tecnología y la programación.
+        </p>
+      </div>
+
+      <div class="footer__social">
+        <h3 class="footer__title">Redes Sociales</h3>
+
+        <ul class="footer__socail-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#"><i class='bx bxl-facebook'></i>Facebook</a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#"><i class='bx bxl-instagram'></i>Instagram</a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#"><i class='bx bxl-twitter'></i>Twitter</a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#"><i class='bx bxl-linkedin'></i>LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__copy">
+      &copy; 2022, Todos los derechos reservados
+    </p>
   </footer>
 
   <script>
