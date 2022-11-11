@@ -73,7 +73,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--bg-color);
-  margin-bottom: 0;
+  margin: 0;
 }
 
 ul {
@@ -234,6 +234,7 @@ textarea {
 .home__image {
   width: clamp(min(320px, 100%), 85vw, 445px);
   height: auto;
+  margin: 0 auto
 }
 
 .home__social {
@@ -454,7 +455,7 @@ textarea {
   background-color: #111;
   color: #efefef;
   padding-bottom: 2rem;
-  margin: 0 -8px;
+
 }
 
 .footer__container {
@@ -507,8 +508,7 @@ textarea {
   .home__container {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
-
-
+    row-gap: 1rem;
   }
 
   .home__image {
@@ -521,12 +521,12 @@ textarea {
   .home__social {
     bottom: 0px;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     gap: 1.5rem;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    transform: translateY(5rem);
+    transform: translateY(20px);
   }
 
   .home__info {
@@ -539,7 +539,7 @@ textarea {
   }
 
   .home__title {
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-size: 2rem;
   }
 
