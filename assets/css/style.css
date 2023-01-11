@@ -247,7 +247,7 @@ textarea {
 
 .home__social-link {
   color: #34B0BE;
-  font-size: 1.7rem;
+  font-size: 2rem;
   transition: color .3s;
 }
 
@@ -448,7 +448,6 @@ textarea {
   color: #fff;
 }
 
-/* ============= Footer ============= */
 
 /* ============= Footer ============= */
 .footer {
@@ -467,14 +466,26 @@ textarea {
   font-size: 1.5rem;
 }
 
+.footer__description {
+  font-size: 1.2rem;
+}
+
 .footer__socail-list {
   display: flex;
-  gap: var(--mr-2);
-  font-size: 1.5rem;
+  gap: var(--mr-5);
+  font-size: 1.3rem;
 }
 
 .footer__social-link {
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.footer__social-icon {
+  font-size: 34px;
 }
 
 .footer__copy {
